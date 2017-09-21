@@ -110,13 +110,13 @@ class RecordLoad extends Operation {
             $record = Record::fromConfig( $payload );
 
             $payloads[ ] = $record;
-
+            
             $prefetched = $this->_read_prefetch_record();  # read cache and prefetch with callback
 
             $payloads = array_merge( $payloads, $prefetched );
 
         }
-
+        $this->_transport->parent->cachedRecords = $payloads;
         return $payloads;
 
     }
