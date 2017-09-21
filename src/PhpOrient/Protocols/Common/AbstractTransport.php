@@ -51,12 +51,19 @@ abstract class AbstractTransport implements TransportInterface {
     protected $orientVersion;
 
     /**
+     * Link to OrientDB instance
+     * @var OrientDB
+     */
+    protected $parent;
+    
+    /**
      * Class Constructor
      *
      * @throws PhpOrientException
      */
-    public function __construct() {
+    public function __construct($parent) {
         $this->setLogger();
+        $this->parent = $parent;
     }
 
     /**
