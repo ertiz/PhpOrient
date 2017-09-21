@@ -564,7 +564,7 @@ abstract class Operation implements ConfigurableInterface {
             } elseif( $status == 2 ){
 
                 #  save in cache
-                call_user_func( $this->_callback, $record );
+                $resultSet[] = $record; //call_user_func( $this->_callback, $record );
             }
 
             $status = $this->_readByte();
