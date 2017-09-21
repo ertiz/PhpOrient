@@ -16,6 +16,12 @@
             "email": "ostico@gmail.com",
             "homepage": "https://www.linkedin.com/in/domenicolupinetti",
             "role": "Owner, Developer"
+        },
+        {
+            "name": "Erman Titiz",
+            "email": "ertiz@me.com",
+            "homepage": "https://www.linkedin.com/in/ermantitiz",
+            "role": "Developer"
         }
     ],
     "require": {
