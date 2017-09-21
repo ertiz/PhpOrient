@@ -67,6 +67,10 @@ class SocketTransport extends AbstractTransport {
      */
     protected $_protocolVersion;
 
+    public function __construct($parent)
+    {
+        parent::__construct($parent);
+    }
     /**
      * Gets the version of negotiated protocol
      *
