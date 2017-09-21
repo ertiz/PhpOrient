@@ -183,7 +183,7 @@ class PhpOrient implements ConfigurableInterface {
 
             if ( is_string( $transport ) ) {
 
-                $_transport = new $transport();
+                $_transport = new $transport($this);
 
                 if ( !$_transport instanceof TransportInterface ) {
                     throw New TransportException( $transport . " is not a valid TransportInterface instance" );
