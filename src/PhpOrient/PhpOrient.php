@@ -79,6 +79,12 @@ class PhpOrient implements ConfigurableInterface {
     protected static $fetchClass = null;
 
     /**
+     * Associative list of cached records, if any
+     * @var array
+     */
+    public $cachedRecords = array();
+    
+    /**
      * Class Constructor
      *
      * @param string $hostname The server host.
